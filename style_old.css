@@ -1,0 +1,53 @@
+body {
+  background-color: #ffffff; /* Warna background yang diinginkan */
+}
+
+.todo-input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.todo-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-todo {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.table tbody tr td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table tbody tr td button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.table tbody tr td button:hover {
+  color: #c82333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
