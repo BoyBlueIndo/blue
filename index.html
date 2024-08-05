@@ -9,17 +9,28 @@
 
   <body>
     <div class="container">
-        <div class="todo-app">
-          <h2>To Do List <img src="image/star.png" alt=""></h2>
-          <div class="row">
-              <input type="text" id="input-box" placeholder="Ketik disini, kayaknya..">
-              <button onclick="addTask()">Tambahkan</button>
-              
-          </div>
-          <ul id="list-container">
-          </ul>
+      <div class="todo-app">
+        <h2>To Do List <img src="image/star.png" alt="" /></h2>
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Ketik disini, kayaknya.." />
+            <ul class="select">
+              <select class="filter-todo">
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Uncompleted">Uncompleted</option>
+              </select>
+            </ul>
+          <button onclick="addTask()">Tambahkan</button>
+          
         </div>
+        
+        <ul id="list-container"></ul>
+      </div>
 
       <script src="script.js"></script>
+    </div>
   </body>
 </html>
